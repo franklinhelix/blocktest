@@ -208,3 +208,213 @@ main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
 }
+//Lokesh
+
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div:nth-child(1) > div > div > div > p:nth-child(1){
+    color: #108000;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: .56px;
+    line-height: 1.45;
+    margin: 0 15%;
+}
+#innovation-inspired-by-nature{
+    padding-top: 10px;
+    font-size: 52px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: 200;
+    font-style: normal;
+    font-family: "Neue Helvetica", Arial, Roboto, sans-serif;
+    margin-left: 15%;
+    margin: 0 15%;
+}
+
+main .section.light, main .section.highlight{
+    background-color: white;
+}
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details > summary{
+    background-color: white;
+}
+
+body > main > div.section.columns-container.accordion-container.carousel-container > div > div > div > div > p{
+    font-family: Calibri,sans-serif;
+   font-size:16px;
+   font-variant: normal;
+   
+  font-weight: 300;
+}
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div:nth-child(2){
+    width: 60%;
+    float: right;
+    text-align: left;
+    margin-right: 50px;
+}
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper{
+    width: 30%;
+    /* float: left; */
+    margin-left: 50px;
+    height: 130rem;
+}
+
+#microbial-biologicals , #biological-pheromones, #microbial-biologicals, #botanical-natural-products {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: .9px;
+}
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.default-content-wrapper{
+width:100%;
+display: block;
+}
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div:nth-child(2) > div > div > div > p > picture > img{
+    width: 60%;
+}
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details > summary > p{
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    color: #0d2a40;
+    letter-spacing: .5px;
+    text-align: right;
+}
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details{
+    border-right: none;
+    border-left: none;
+}
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details{
+    margin-top: 0px;
+}
+
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details > div{
+font-size: 15px;
+margin: 5px;
+}
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details > div{
+    border-top: 0;
+}
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div > div > div > div > p > a{
+    color: #0075a6;
+    font-weight: 500;
+}
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details > summary > ul{
+    list-style-type:none;
+    margin: 0;
+}
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details > summary > ul > li > a{
+    font-size: 15px;
+    color: #10384f !important;
+    text-decoration: none;
+}
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details > summary > ul > li > a:hover{
+    
+    color: #ff3162;
+   
+}
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details > summary > p > a{
+    color: #10384f;
+    background: none;
+    margin: 0;
+    font-weight: 300;
+    padding: 0;
+    display: block;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details > summary > p:hover,
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details > summary > p > a:hover {
+    color: #ff3162;
+}
+
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details > div{
+    position: absolute;
+    z-index: 99;
+    left: 35%;
+    margin-top: -2.7rem;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.1);
+    background: #fff;
+    border-top: 1px solid #cccccc;
+}
+
+
+
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details> div > ul{
+    list-style: none;
+    padding-left: 5px;
+}
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details > div > ul > li > a{
+    color: #10384f;
+    background: none;
+    margin: 0;
+    font-weight: 300;
+    padding: 5px 0px;
+    display: block;
+    text-align: left;
+    margin-left: 0rem;
+    text-decoration: none;
+    border-bottom: 1px solid #cccccc;
+    font-size: 14px;
+}
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details > div > ul > li > a:hover{
+    color: #ff3162;
+}
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div{
+    width: 62%;
+    line-height: 1;
+    float: right;
+
+}
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details:nth-child(14) > div,
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details:nth-child(7) > div,
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details:nth-child(8) > div,
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details:nth-child(1) > div,
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details:nth-child(2) > div,
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details:nth-child(3) > div,
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details:nth-child(1) > summary:after,
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details:nth-child(2) > summary:after,
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details:nth-child(3) > summary:after,
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details:nth-child(7) > summary:after,
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details:nth-child(8) > summary:after,
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details:nth-child(14) > summary:after
+
+{
+    display:none !important;
+}
+
+.accordion-item-body{
+display: none;
+}
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details > summary:hover +  .accordion-item-body{
+    display:block;
+}
+
+body > main > div.section.highlight.columns-container.accordion-container.carousel-container > div.accordion-wrapper > div > details:nth-child(3) > summary > ul > li > a{
+    color: #0075a6 !important;
+    pointer-events: none;
+}
