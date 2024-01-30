@@ -133,3 +133,40 @@ async function loadPage() {
 }
 
 loadPage();
+//header top change 
+document.addEventListener('DOMContentLoaded', function() {
+  // Create the new elements
+  var globeContainer = document.createElement('span');
+  var globeIcon = document.createElement('i');
+  globeIcon.className = 'fa fa-globe';
+  var globeText = document.createTextNode('English (US)');
+  globeContainer.appendChild(globeIcon);
+  globeContainer.appendChild(globeText);
+
+  var locationContainer = document.createElement('span');
+  var locationIcon = document.createElement('i');
+  locationIcon.className = 'fas fa-map-marker-alt';
+  var locationText = document.createTextNode('Location');
+  locationContainer.appendChild(locationIcon);
+  locationContainer.appendChild(locationText);
+
+  var contactContainer = document.createElement('span');
+  var contactIcon = document.createElement('i');
+  contactIcon.className = 'far fa-envelope';
+  var contactText = document.createTextNode('Contact Us');
+  contactContainer.appendChild(contactIcon);
+  contactContainer.appendChild(contactText);
+
+  // Select the target element using the provided path
+  var targetElement = document.querySelector('#nav > div.section.nav-brand > div > p:nth-child(1)');
+
+  // Check if the target element exists
+  if (targetElement) {
+    // Append the new elements to the target element
+    targetElement.appendChild(globeContainer);
+    targetElement.appendChild(locationContainer);
+    targetElement.appendChild(contactContainer);
+  } else {
+    console.error('Target element not found. Check your selector:', '#nav > div.section.nav-brand > div > p:nth-child(1)');
+  }
+});
