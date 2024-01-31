@@ -289,7 +289,7 @@ header .nav-wrapper {
   width: 100%;
 }
 .header-wrapper .header .nav-wrapper #nav > div.section.nav-brand > div > p:nth-child(1) {
-  text-align: center;
+  text-align: right;
 }
 .header-wrapper .header .nav-wrapper #nav > div.section.nav-brand > div > p:nth-child(1) > em {
   font-style: italic;
@@ -297,6 +297,7 @@ header .nav-wrapper {
   color: #10384f;
   letter-spacing: 0;
   font-weight: 600;
+  padding-right: 15px;
 }
 .header-wrapper .header .nav-wrapper #nav > div.section.nav-brand > div > p:nth-child(2) {
   display: flex;
@@ -333,7 +334,7 @@ header .nav-wrapper {
 .header-wrapper .header .nav-wrapper #nav > div.section.nav-tools {
   position: absolute;
   bottom: 10px;
-  right: 0px;
+  right: 15px;
 }
 .header-wrapper .header .nav-wrapper #nav > div.section.nav-tools > div > p > span {
   width: 22px;
@@ -389,7 +390,44 @@ header .nav-wrapper {
       left: -18vw;
       clip-path: polygon(0 0,100% 0,96% 100%,0 100%);
   }
-
+  .header-wrapper .header #nav > div.section.nav-brand > div > p:nth-child(1) > span {
+    padding: 7px 25px 0px 10px;
+    cursor: pointer;
+    border: 1px solid #624963;
+    border-top-color: transparent;
+    color: #10384f;
+    font-size: 13px;
+    letter-spacing: .25px;
+    position: relative;
+    top: 0px;
+    height: 22px;
+    display: inline-block;
+    margin: 0px 5px;
+  }
+    .header-wrapper .header #nav > div.section.nav-brand > div > p:nth-child(1) > span i{
+      color:#d30f4b;
+      margin-right: 6px;
+    }
+    .header-wrapper .header #nav > div.section.nav-brand > div > p:nth-child(1) > span::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0.6em;
+    right: 10px;
+    transform: rotate(135deg);
+    width: 5px;
+    height: 5px;
+    border: 2px solid currentcolor;
+    border-radius: 0 1px 0 0;
+    border-width: 2px 2px 0 0;
+    color:#d30f4b;
+}
+    .header-wrapper .header #nav > div.section.nav-brand > div > p:nth-child(1) > span:nth-child(4) {
+      margin-right: 0px;
+    }
+    .header-wrapper .header #nav > div.section.nav-brand > div > p:nth-child(1) > span:nth-child(4)::after {
+      display: none;
+    }
   }
   
   /* tools */
