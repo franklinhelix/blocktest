@@ -147,8 +147,9 @@ export default async function decorate(block) {
   block.append(navWrapper);
 }
 //vetri
-       document.addEventListener('DOMContentLoaded', function() {        
-var header = document.querySelector('.header-wrapper .header nav');
+       setTimeout(function() {
+    var header = document.querySelector('.header-wrapper .header nav');
+    if (header !== null) {
         var originalHeight = header.offsetHeight;
 
         window.addEventListener('scroll', function() {
@@ -160,5 +161,5 @@ var header = document.querySelector('.header-wrapper .header nav');
                 header.style.height = originalHeight + 'px';
             }
         });
-  });
-
+    }
+}, 1000);
