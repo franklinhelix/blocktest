@@ -147,7 +147,7 @@ export default async function decorate(block) {
   block.append(navWrapper);
 }
 //vetri
-       setTimeout(function() {
+ setTimeout(function() {
     var header = document.querySelector('.header-wrapper .header nav');
     if (header !== null) {
         var originalHeight = header.offsetHeight;
@@ -162,47 +162,32 @@ export default async function decorate(block) {
             }
         });
     }
-        
+    var globeContainer = document.createElement('span');
+    var globeIcon = document.createElement('i');
+    globeIcon.className = 'fa fa-globe'; // Updated class for regular globe icon
+    var globeText = document.createTextNode('English (US)');
+    globeContainer.appendChild(globeIcon);
+    globeContainer.appendChild(globeText);
 
-}, 1000);
-//ananth
-// Define the function with the logic you provided
-function addElementsToNav() {
-  var globeContainer = document.createElement('span');
-  var globeIcon = document.createElement('i');
-  globeIcon.className = 'fa fa-globe';
-  var globeText = document.createTextNode('English (US)');
-  globeContainer.appendChild(globeIcon);
-  globeContainer.appendChild(globeText);
+    var locationContainer = document.createElement('span');
+    var locationIcon = document.createElement('i');
+    locationIcon.className = 'fas fa-map-marker-alt'; // Updated class for solid location icon
+    var locationText = document.createTextNode('Location');
+    locationContainer.appendChild(locationIcon);
+    locationContainer.appendChild(locationText);
 
-  var locationContainer = document.createElement('span');
-  var locationIcon = document.createElement('i');
-  locationIcon.className = 'fas fa-map-marker-alt';
-  var locationText = document.createTextNode('Location');
-  locationContainer.appendChild(locationIcon);
-  locationContainer.appendChild(locationText);
+    var contactContainer = document.createElement('span');
+    var contactIcon = document.createElement('i');
+    contactIcon.className = 'far fa-envelope'; // Updated class for regular envelope icon
+    var contactText = document.createTextNode('Contact Us');
+    contactContainer.appendChild(contactIcon);
+    contactContainer.appendChild(contactText);
 
-  var contactContainer = document.createElement('span');
-  var contactIcon = document.createElement('i');
-  contactIcon.className = 'far fa-envelope';
-  var contactText = document.createTextNode('Contact Us');
-  contactContainer.appendChild(contactIcon);
-  contactContainer.appendChild(contactText);
+    // Select the target element using the provided path
+    var targetElement = document.querySelector('#nav > div.section.nav-brand > div > p:nth-child(1)');
 
-  // Try to get the target element again after the DOM has fully loaded
-  var targetElement = document.querySelector('#nav > div.section.nav-brand > div > p:nth-child(1)');
-
-  // Check if the target element is found before appending
-  if (targetElement) {
+    // Append the new elements to the target element
     targetElement.appendChild(globeContainer);
     targetElement.appendChild(locationContainer);
     targetElement.appendChild(contactContainer);
-  } else {
-    console.error("Target element not found");
-  }
-}
-
-// Add an event listener to the DOMContentLoaded event
-document.addEventListener('DOMContentLoaded', function() {
-  addElementsToNav();
-});
+}, 1000);
