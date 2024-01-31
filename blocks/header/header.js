@@ -146,37 +146,6 @@ export default async function decorate(block) {
   navWrapper.append(nav);
   block.append(navWrapper);
 }
-//ananth
- // Create the new elements
-
-      var globeContainer = document.createElement('span');
-      var globeIcon = document.createElement('i');
-      globeIcon.className = 'fa fa-globe'; // Updated class for regular globe icon
-      var globeText = document.createTextNode('English (US)');
-      globeContainer.appendChild(globeIcon);
-      globeContainer.appendChild(globeText);
-
-      var locationContainer = document.createElement('span');
-      var locationIcon = document.createElement('i');
-      locationIcon.className = 'fas fa-map-marker-alt'; // Updated class for solid location icon
-      var locationText = document.createTextNode('Location');
-      locationContainer.appendChild(locationIcon);
-      locationContainer.appendChild(locationText);
-
-      var contactContainer = document.createElement('span');
-      var contactIcon = document.createElement('i');
-      contactIcon.className = 'far fa-envelope'; // Updated class for regular envelope icon
-      var contactText = document.createTextNode('Contact Us');
-      contactContainer.appendChild(contactIcon);
-      contactContainer.appendChild(contactText);
-
-      // Select the target element using the provided path
-      var targetElement = document.querySelector('#nav > div.section.nav-brand > div > p:nth-child(1)');
-
-      // Append the new elements to the target element
-      targetElement.appendChild(globeContainer);
-      targetElement.appendChild(locationContainer);
-      targetElement.appendChild(contactContainer);
 //vetri
        setTimeout(function() {
     var header = document.querySelector('.header-wrapper .header nav');
@@ -196,3 +165,38 @@ export default async function decorate(block) {
         
 
 }, 1000);
+//ananth
+// Define the function with the logic you provided
+function addElementsToNav() {
+  var globeContainer = document.createElement('span');
+  var globeIcon = document.createElement('i');
+  globeIcon.className = 'fa fa-globe';
+  var globeText = document.createTextNode('English (US)');
+  globeContainer.appendChild(globeIcon);
+  globeContainer.appendChild(globeText);
+
+  var locationContainer = document.createElement('span');
+  var locationIcon = document.createElement('i');
+  locationIcon.className = 'fas fa-map-marker-alt';
+  var locationText = document.createTextNode('Location');
+  locationContainer.appendChild(locationIcon);
+  locationContainer.appendChild(locationText);
+
+  var contactContainer = document.createElement('span');
+  var contactIcon = document.createElement('i');
+  contactIcon.className = 'far fa-envelope';
+  var contactText = document.createTextNode('Contact Us');
+  contactContainer.appendChild(contactIcon);
+  contactContainer.appendChild(contactText);
+
+  var targetElement = document.querySelector('#nav > div.section.nav-brand > div > p:nth-child(1)');
+
+  targetElement.appendChild(globeContainer);
+  targetElement.appendChild(locationContainer);
+  targetElement.appendChild(contactContainer);
+}
+
+// Add an event listener to the window object to call the function on the onload event
+window.onload = function() {
+  addElementsToNav();
+};
