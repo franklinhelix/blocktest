@@ -146,4 +146,17 @@ export default async function decorate(block) {
   navWrapper.append(nav);
   block.append(navWrapper);
 }
+//vetri
+        var header = document.querySelector('.header-wrapper .header nav');
+        var originalHeight = header.offsetHeight;
+
+        window.addEventListener('scroll', function() {
+        	if (window.scrollY > 0) {
+        		header.classList.add('open');
+        		header.style.height = '50px'; // Adjust the height as needed
+        	} else {
+        		header.classList.remove('open');
+        		header.style.height = originalHeight + 'px';
+        	}
+        });
 
