@@ -1,3 +1,4 @@
+
 /* header and nav layout */
 header .nav-wrapper {
     background-color: var(--background-color);
@@ -234,6 +235,7 @@ header .nav-wrapper {
       flex: 0 1 auto;
       position: relative;
       font-weight: 500;
+      color: #10384f;
     }
   
     header nav .nav-sections .default-content-wrapper > ul > li > ul {
@@ -277,9 +279,10 @@ header .nav-wrapper {
   flex-direction: column;
   max-width: 983px;
   width: 100%;
-  min-height: 117px;
+  height: 117px;
   padding: 0 15px;
   position: relative;
+  transition: height 0.5s;
 }
 
 .header-wrapper .header .nav-wrapper #nav > div.section.nav-brand {
@@ -344,6 +347,48 @@ header .nav-wrapper {
   width: 18px;
   transform: scaleX(-1);
 }
+.header-wrapper .header .nav-wrapper #nav.open > div.section.nav-brand > div > p:nth-child(1) {
+    display: none;
+  }
+  .header-wrapper .header .nav-wrapper #nav.open > div.section.nav-brand > div > p:nth-child(2) {
+    font-size: 0px;
+  }
+    .header-wrapper .header .nav-wrapper #nav.open > div.section.nav-sections > div > ul {
+        gap: 0.6em;
+        justify-content: center;
+        margin-top: 4px;
+    }
+    .header-wrapper .header .nav-wrapper #nav.open > div.section.nav-brand {
+        position: absolute;
+        left: 20px;
+        width: auto;
+      }
+      .header-wrapper .header .nav-wrapper #nav.open > div.section.nav-brand > div > p:nth-child(2) picture {
+        width: 35px;
+        height: 35px;
+        margin-top: 7px;
+      }
+      .header-wrapper .header .nav-wrapper #nav.open > div.section.nav-brand > div > p:nth-child(2) picture img{
+        filter: brightness(0) invert(1);
+      }
+      .header-wrapper .header nav:before {
+      content: '';
+      display: block;
+      position: absolute;
+      background: #10384f;
+      top: 0px;
+      width: 25vw;
+      left: -100vw;
+      z-index: -1;
+      transition: left .5s ease-in-out;
+      opacity: 0;
+      height: 50px;
+  }
+  .header-wrapper .header nav.open:before {
+      opacity: 1;
+      left: -18vw;
+      clip-path: polygon(0 0,100% 0,96% 100%,0 100%);
+  }
 
   }
   
