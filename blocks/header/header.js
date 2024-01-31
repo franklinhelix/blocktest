@@ -147,23 +147,7 @@ export default async function decorate(block) {
   block.append(navWrapper);
 }
 //ananth
-//vetri
-       setTimeout(function() {
-    var header = document.querySelector('.header-wrapper .header nav');
-    if (header !== null) {
-        var originalHeight = header.offsetHeight;
-
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 0) {
-                header.classList.add('open');
-                header.style.height = '50px'; // Adjust the height as needed
-            } else {
-                header.classList.remove('open');
-                header.style.height = originalHeight + 'px';
-            }
-        });
-    }
-         // Create the new elements
+ // Create the new elements
 
       var globeContainer = document.createElement('span');
       var globeIcon = document.createElement('i');
@@ -193,5 +177,22 @@ export default async function decorate(block) {
       targetElement.appendChild(globeContainer);
       targetElement.appendChild(locationContainer);
       targetElement.appendChild(contactContainer);
+//vetri
+       setTimeout(function() {
+    var header = document.querySelector('.header-wrapper .header nav');
+    if (header !== null) {
+        var originalHeight = header.offsetHeight;
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 0) {
+                header.classList.add('open');
+                header.style.height = '50px'; // Adjust the height as needed
+            } else {
+                header.classList.remove('open');
+                header.style.height = originalHeight + 'px';
+            }
+        });
+    }
+        
 
 }, 1000);
