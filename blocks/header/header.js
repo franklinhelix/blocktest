@@ -189,14 +189,20 @@ function addElementsToNav() {
   contactContainer.appendChild(contactIcon);
   contactContainer.appendChild(contactText);
 
+  // Try to get the target element again after the DOM has fully loaded
   var targetElement = document.querySelector('#nav > div.section.nav-brand > div > p:nth-child(1)');
 
-  targetElement.appendChild(globeContainer);
-  targetElement.appendChild(locationContainer);
-  targetElement.appendChild(contactContainer);
+  // Check if the target element is found before appending
+  if (targetElement) {
+    targetElement.appendChild(globeContainer);
+    targetElement.appendChild(locationContainer);
+    targetElement.appendChild(contactContainer);
+  } else {
+    console.error("Target element not found");
+  }
 }
 
-// Add an event listener to the window object to call the function on the onload event
-window.onload = function() {
+// Add an event listener to the DOMContentLoaded event
+document.addEventListener('DOMContentLoaded', function() {
   addElementsToNav();
-};
+});
